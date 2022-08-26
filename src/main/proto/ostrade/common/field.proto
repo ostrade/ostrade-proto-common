@@ -6,6 +6,10 @@ option java_multiple_files = true;
 
 package ostrade.field;
 
+/*
+Comment
+ */
+
 enum Side {
   BUY = 0;
   SELL = 1;

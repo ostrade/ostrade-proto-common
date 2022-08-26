@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+option java_package = "org.ostrade.proto.field";
+option java_outer_classname = "FieldProtos";
+option java_multiple_files = true;
+
+package ostrade.field;
+
+enum Side {
+  BUY = 0;
+  SELL = 1;
+}
+
+enum PutCall {
+  PUT = 0;
+  CALL = 1;
+}
+
+enum SecurityType {
+  MULTILEG = 0;
+  FUTURE = 1;
+  FORWARD = 2;
+  OPTION = 3;
+  OPTION_ON_FUTURE = 4;
+  OPTION_ON_COMBO = 5;
+}
+
+enum ExecutionVenue {
+  OFF_PLATFORM = 0;
+  NYMEX = 1;
+  IFUS = 2;
+}
+
+enum UnitOfMeasure {
+  Bbl = 0;
+}
+
+enum SettlementMethod {
+  PHYSICAL = 0;
+  FINANCIAL = 1;
+}
+
+enum Currency {
+  USD = 0;
+  CAD = 1;
+}
+
+enum Month {
+  UNDEFINED_MONTH = 0;
+  F = 1;
+  G = 2;
+  H = 3;
+  J = 4;
+  K = 5;
+  M = 6;
+  N = 7;
+  Q = 8;
+  U = 9;
+  V = 10;
+  X = 11;
+  Z = 12;
+}
+
+enum AssetClass {
+  UNDEFINED_ASSET_CLASS = 0;
+  COMMODITY = 5;
+}
+
+enum AssetSubClass {
+  UNDEFINED_ASSET_SUB_CLASS = 0;
+  ENERGY = 15;
+}
+
+enum TradeType {
+  UNDEFINED_TRADE_TYPE = 0;
+  REGULAR = 1;
+  BLOCK = 2;
+  EXCHANGE_FOR_PHYSICAL = 3;
+}

@@ -21,4 +21,5 @@ message Date {
 message ContractMonth {
   int32 year = 1;
   int32 month = 2;
+  int32 day = 3;
 }

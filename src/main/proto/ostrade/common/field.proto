@@ -6,10 +6,6 @@ option java_multiple_files = true;
 
 package ostrade.field;
 
-/*
-Comment
- */
-
 enum Side {
   BUY = 0;
   SELL = 1;
@@ -66,13 +62,17 @@ enum Month {
 }
 
 enum AssetClass {
-  UNDEFINED_ASSET_CLASS = 0;
-  COMMODITY = 5;
+  COMMODITY = 0;
 }
 
 enum AssetSubClass {
-  UNDEFINED_ASSET_SUB_CLASS = 0;
-  ENERGY = 15;
+  ENERGY = 0;
+}
+
+enum Commodity {
+  NATURAL_GAS = 0;
+  CRUDE_OIL = 1;
+  POWER = 2;
 }
 
 enum TradeType {
